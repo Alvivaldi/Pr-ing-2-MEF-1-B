@@ -6,3 +6,10 @@ typedef struct arbre{
     int eq;
 }Arbre;
 
+typedef struct usine{
+    char id[MAX];
+    int capacite_max;       
+    int volume_total; 
+    struct Usine *fg;
+    struct Usine *fd;
+} Usine;
